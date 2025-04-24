@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(morgan('dev'));
 app.use(cors({
-    origin: '*', // Allow requests from your frontend
+    origin: 'https://lms-project-sand.vercel.app', // Allow requests from your frontend
     credentials: true, // Allow cookies if needed
 }));
 
