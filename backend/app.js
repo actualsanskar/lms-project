@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(morgan('dev'));
 app.use(cors({
-    origin: process.env.FRONTEND_URL, // Allow requests from your frontend
+    origin: '*', // Allow requests from your frontend
     credentials: true, // Allow cookies if needed
 }));
 
